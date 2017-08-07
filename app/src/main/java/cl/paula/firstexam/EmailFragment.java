@@ -10,6 +10,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.Toast;
 
 
 /**
@@ -51,9 +52,13 @@ public class EmailFragment extends Fragment {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String answer= "Serás notificado a través de un Email";
+                Toast.makeText(getContext(), "Serás notificado a través de un Email", Toast.LENGTH_SHORT).show();
+
             }
         });
+
+
+
 
     }
 
